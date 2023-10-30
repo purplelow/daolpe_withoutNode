@@ -1,59 +1,159 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="public/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="public/favicon/favicon.ico" type="image/x-icon" />
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="format-detection" content="telephone=no, address=no, email=no" />
-	<link rel="shortcut icon" href="public/favicon/favicon.ico" type="image/x-icon" />
-	<link rel="icon" href="public/favicon/favicon.ico" type="image/x-icon" />
-	<title>DAOL Private Equity</title>
+    <meta
+      name="naver-site-verification"
+      content="31846b5cbaf9cf693116e4ebe5650b353ba9b8ed"
+    />
+    <meta property="title" content="DAOL Private Equity" />
+    <meta
+      property="keywords"
+      content="다올피이, 다올pe, 다올프라이빗에쿼티, Daolpe, Daolprivateequity"
+    />
+    <title>DAOL Private Equity</title>
 
-	<meta name="naver-site-verification" content="31846b5cbaf9cf693116e4ebe5650b353ba9b8ed" />
-	<meta property="title" content="DAOL Private Equity">
-	<meta property="keywords" content="다올피이, 다올pe, 다올프라이빗에쿼티, Daolpe, Daolprivateequity">
+    <script
+      src="https://kit.fontawesome.com/6a615ea8dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind css UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind_config.js"></script>
+    <script src="js/interaction.js"></script>
 
-	<!-- Tailwind css UI -->
-	<script src="https://cdn.tailwindcss.com"></script>
-	<script src="js/tailwind_config.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <link rel="stylesheet" href="dist/drawerr.css" />
+  </head>
 
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css" />
-	<link rel="stylesheet" type="text/css" href="css/globals.css" />
-	<script>
-	</script>
-</head>
+  <body>
+    <div class="h-screen w-screen text-daolpe_color">
+      <header
+        class="sticky top-0 z-50 grid grid-cols-2 justify-end px-3 py-1 md:px-10 md:py-6"
+      >
+        <div
+          class="relative my-auto flex h-10 w-full cursor-pointer items-center py-1"
+        >
+          <a
+            href="index.html"
+            class="bg-[url('public/assets/logo_white.png')] block w-full h-full bg-contain bg-left bg-no-repeat"
+          ></a>
+        </div>
 
-<body>
-	<div class="h-screen w-screen text-daolpe_color">
-		<header class="sticky top-0 z-50 grid grid-cols-2 justify-end px-3 py-1 md:px-10 md:py-6">
-			<div class="relative my-auto flex h-10 w-full cursor-pointer items-center">
-				<a>
-					<img src="public/assets/logo_white.png" alt="다올 프라이빗에쿼티" class="object-contain object-left py-1" />
-				</a>
-			</div>
+        <div
+          class="flex items-center justify-end space-x-14 text-lg text-gray-500 z-50"
+        >
+          <!-- <button
+            id="toggleMenuBtn"
+            href="javascript:void(0);"
+            class="icon text-white text-3xl"
+            onclick="handleToggleMenu()"
+          >
+            <i class="fa fa-bars"></i>
+            <i class="fa-solid fa-x"></i>
+          </button> -->
+          <button class="toggleDrawerr">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
 
-			<div class="flex items-center justify-end space-x-14 text-lg text-gray-500">
-				<div class="">MENU</div>
-			</div>
+        <div
+          id="menuLayer"
+          class="fixed top-0 -right-[280px] z-40 h-full w-[280px] bg-white bg-opacity-90 transition-all ease-in"
+        >
+          <div
+            class="grid h-full grid-cols-1 grid-rows-2 items-center justify-end"
+          >
+            <ul
+              class="bolder space-y-8 pl-16 pt-32 text-left text-2xl text-[#222222]"
+            >
+              <li>
+                <a class="block py-2" href="/"> Main </a>
+              </li>
+              <li>
+                <a class="block py-2" href="/company"> Company </a>
+              </li>
+              <li>
+                <a class="block py-2" href="/portfolio"> Investment </a>
+              </li>
+              <li>
+                <a class="block py-2" href="/leadership"> Leadership </a>
+              </li>
+            </ul>
+            <div
+              class="flex h-full flex-col flex-wrap items-center justify-end pb-4"
+            >
+              <span class="px-4 text-center text-[10px]">
+                COPYRIGHT© <br />
+                DAOL Private Equity ALL RIGHTS RESERVED.
+              </span>
+            </div>
+          </div>
+        </div>
+      </header>
 
-		</header>
+      <nav id="drawerr" class="drawerr--init">
+        <div class="drawerr-container">
+          <div class="drawerr-navigation-container"></div>
+          <ul
+            class="bolder space-y-8 pl-16 pt-32 text-left text-2xl text-[#222222]"
+          >
+            <li>
+              <a class="block py-2" href="/"> Main </a>
+            </li>
+            <li>
+              <a class="block py-2" href="/company"> Company </a>
+            </li>
+            <li>
+              <a class="block py-2" href="/portfolio"> Investment </a>
+            </li>
+            <li>
+              <a class="block py-2" href="/leadership"> Leadership </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-		<div class="absolute top-0 h-full w-full bg-[url('public/assets/bg_main.jpg')] bg-cover bg-center">
-			<div class="fixed z-10 h-screen w-screen bg-black bg-opacity-50"></div>
-			<main class="relative z-30 flex h-full w-full items-center justify-center">
-				<section class="min-h-[196px] w-full space-y-8 bg-white bg-opacity-20 py-10 text-center text-white">
-					<p class="bold text-5xl">다올프라이빗에쿼티는</p>
-					<p class="light text-3xl">
-						2021년 설립 이래 성공적으로 가치를 창출하고 있는 선도적인
-						사모투자 전문회사입니다.
-					</p>
-				</section>
-			</main>
-		</div>
-
-	</div>
-	<!-- <div class="footer_top_txt">
+      <div
+        class="absolute top-0 h-full w-full bg-[url('public/assets/bg_main.jpg')] bg-cover bg-center"
+      >
+        <div class="fixed z-10 h-screen w-screen bg-black bg-opacity-50"></div>
+        <main
+          class="relative z-30 flex h-full w-full items-center justify-center"
+        >
+          <section
+            class="min-h-[196px] w-full space-y-8 bg-white bg-opacity-20 py-10 text-center text-white"
+          >
+            <p class="bold text-5xl">다올프라이빗에쿼티는</p>
+            <p class="light text-3xl">
+              2021년 설립 이래 성공적으로 가치를 창출하고 있는 선도적인 사모투자
+              전문회사입니다.
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+    <!-- <div class="footer_top_txt">
 		<ul class="family_sub">
 			<li><a href="http://www.daolsecurities.com/" target="_blank">다올투자증권</a></li>
 			<li><a href="https://www.daolsb.com" target="_blank">다올저축은행</a></li>
@@ -70,6 +170,12 @@
 			<li class="Mr_pro">COPYRIGHT© DAOL Private Equity ALL RIGHTS RESERVED.</li>
 		</ul>
 	</div> -->
-</body>
-
+    <!-- <script src="https://cdn.polyfill.io/v2/polyfill.js"></script> -->
+    <script src="dist/drawerr.js"></script>
+    <script>
+      const x = new drawerrMultilevel({
+        drawerr: "#drawerr",
+      });
+    </script>
+  </body>
 </html>
