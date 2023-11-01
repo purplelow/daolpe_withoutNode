@@ -8,7 +8,7 @@ const settings = {
 const options = {
   btnText: "MENU",
   drawerr: "#drawerr",
-  navbar: "header",
+  navbar: "",
   toggleBtn: ".toggleDrawerr",
   slideFrom: "right",
   preventBodyOnClick: false,

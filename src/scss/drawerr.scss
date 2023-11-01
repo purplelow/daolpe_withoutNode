@@ -9,7 +9,7 @@
   height: calc(100% - #{$drawerr-navbar-height});
   overflow-x: hidden;
   overflow-y: auto;
-  transform: $drawerr-translate-rtl;
+  transform: $drawerr-translate;
   transition: $drawerr-transition;
   background: $drawerr-bg;
   box-shadow: 1px 0px $drawerr-shadow-depth 0px rgba(50, 50, 50, 0.75);
