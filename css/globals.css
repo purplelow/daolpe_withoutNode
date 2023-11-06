@@ -2,6 +2,8 @@
 
 body {
   font-family: "NanumSquareOTF", "Mr_pro", sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 .bolder {
   font-weight: 800;
