@@ -3,7 +3,7 @@
   position: fixed;
   z-index: 40;
   top: 0px;
-  width: 350px;
+  /* width: 350px; */
   right: 0;
   height: 100%;
   overflow-x: hidden;
@@ -14,7 +14,7 @@
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: rgba(0, 0, 0, 0.6); */
   box-shadow: 1px 0 10px 0 rgba(50, 50, 50, 0.75);
 }
 .drawerr-no-scroll {
