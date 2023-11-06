@@ -18,6 +18,16 @@ body {
   font-weight: 300;
 }
 
+.introduction__head {
+  writing-mode: vertical-lr;
+}
+
+.portfolioList {
+  width: 200px;
+  height: 200px;
+  background-color: #ddd;
+}
+
 .loader {
   width: 215px;
   height: 220px;
