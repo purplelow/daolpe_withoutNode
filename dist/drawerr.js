@@ -5006,7 +5006,7 @@ function _typeof(e) {
             o = v.closeMenuBtnLabel,
             a = v.showOnLoad;
           return (
-            (n.options.navigationText = e.navigationText || i),
+            // (n.options.navigationText = e.navigationText || i),
             (n.options.toggleBtnAriaLabel = e.toggleBtnAriaLabel || r),
             (n.options.closeMenuBtnLabel = e.closeMenuBtnLabel || o),
             (n.options.showOnLoad = e.showOnLoad || a),
@@ -5014,14 +5014,14 @@ function _typeof(e) {
             n.drawerr.classList.add("drawerr-multilevel"),
             (n.tabHandle = !1),
             (n.links = n.drawerr.querySelectorAll("a")),
-            n.insertNavigation(),
-            n.insertCloseMenu(),
+            // n.insertNavigation(),
+            // n.insertCloseMenu(),
             (n.navigation = document.querySelector(
               ".".concat(n.multilevelSettings.navigationTextClass)
             )),
-            (n.navigationText = n.navigation.querySelector(
-              ".".concat(n.multilevelSettings.navigationTextClass, "__text")
-            )),
+            // (n.navigationText = n.navigation.querySelector(
+            //   ".".concat(n.multilevelSettings.navigationTextClass, "__text")
+            // )),
             (n.navigationIcon = document.querySelector(
               ".".concat(n.multilevelSettings.navigationTextClass, "__icon")
             )),
@@ -5030,7 +5030,7 @@ function _typeof(e) {
               n.drawerr.querySelectorAll("ul li ul")),
             n.addClassToSubmenus(),
             n.bindLinks(),
-            n.navigationOnClick(),
+            // n.navigationOnClick(),
             n.bindOnClose(),
             n.toggleBtn.setAttribute("aria-expanded", "false"),
             n.toggleBtn.setAttribute(
@@ -5237,35 +5237,35 @@ function _typeof(e) {
                 }
               },
             },
-            {
-              key: "navigationOnClick",
-              value: function () {
-                var e = this;
-                this.navigation.addEventListener("click", function (t) {
-                  t.preventDefault(),
-                    e.multilevelSettings.activeSubmenu &&
-                      (e.removeActiveClassFromLinks(),
-                      e.multilevelSettings.activeSubmenu.classList.remove(
-                        e.multilevelSettings.submenuActiveClass
-                      ),
-                      (e.multilevelSettings.activeSubmenu =
-                        e.multilevelSettings.activeSubmenu.parentElement.parentElement),
-                      e.multilevelSettings.activeSubmenu.classList.contains(
-                        "drawerr-submenu--active"
-                      )
-                        ? e.setNavigationText(
-                            e.multilevelSettings.activeSubmenu.parentElement.querySelector(
-                              "a"
-                            ).textContent
-                          )
-                        : (e.hideShowNavigationIcon(
-                            e.multilevelSettings.hiddenClass
-                          ),
-                          e.setNavigationText(e.options.navigationText),
-                          e.navigation.setAttribute("tabindex", -1)));
-                });
-              },
-            },
+            // {
+            //   key: "navigationOnClick",
+            //   value: function () {
+            //     var e = this;
+            //     this.navigation.addEventListener("click", function (t) {
+            //       t.preventDefault(),
+            //         e.multilevelSettings.activeSubmenu &&
+            //           (e.removeActiveClassFromLinks(),
+            //           e.multilevelSettings.activeSubmenu.classList.remove(
+            //             e.multilevelSettings.submenuActiveClass
+            //           ),
+            //           (e.multilevelSettings.activeSubmenu =
+            //             e.multilevelSettings.activeSubmenu.parentElement.parentElement),
+            //           e.multilevelSettings.activeSubmenu.classList.contains(
+            //             "drawerr-submenu--active"
+            //           )
+            //             ? e.setNavigationText(
+            //                 e.multilevelSettings.activeSubmenu.parentElement.querySelector(
+            //                   "a"
+            //                 ).textContent
+            //               )
+            //             : (e.hideShowNavigationIcon(
+            //                 e.multilevelSettings.hiddenClass
+            //               ),
+            //               e.setNavigationText(e.options.navigationText),
+            //               e.navigation.setAttribute("tabindex", -1)));
+            //     });
+            //   },
+            // },
             {
               key: "closeMenuOnClick",
               value: function () {

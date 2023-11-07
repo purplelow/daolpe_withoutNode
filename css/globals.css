@@ -18,6 +18,10 @@ body {
   font-weight: 300;
 }
 
+.header_up {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .introduction__head {
   writing-mode: vertical-lr;
 }
