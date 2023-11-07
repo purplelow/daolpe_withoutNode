@@ -1,144 +1,101 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="format-detection"
-      content="telephone=no, address=no, email=no"
-    />
-    <link
-      rel="shortcut icon"
-      href="public/favicon/favicon.ico"
-      type="image/x-icon"
-    />
-    <link rel="icon" href="public/favicon/favicon.ico" type="image/x-icon" />
 
-    <meta
-      name="naver-site-verification"
-      content="31846b5cbaf9cf693116e4ebe5650b353ba9b8ed"
-    />
-    <meta property="title" content="DAOL Private Equity" />
-    <meta
-      property="keywords"
-      content="다올피이, 다올pe, 다올프라이빗에쿼티, Daolpe, Daolprivateequity"
-    />
-    <title>DAOL Private Equity</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="format-detection" content="telephone=no, address=no, email=no" />
+  <link rel="shortcut icon" href="public/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="public/favicon/favicon.ico" type="image/x-icon" />
 
-    <script
-      src="https://kit.fontawesome.com/6a615ea8dc.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Tailwind css UI -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="js/tailwind_config.js"></script>
-    <script src="js/interaction.js"></script>
+  <meta name="naver-site-verification" content="31846b5cbaf9cf693116e4ebe5650b353ba9b8ed" />
+  <meta property="title" content="DAOL Private Equity" />
+  <meta property="keywords" content="다올피이, 다올pe, 다올프라이빗에쿼티, Daolpe, Daolprivateequity" />
+  <title>DAOL Private Equity</title>
 
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"
-    />
-    <link rel="stylesheet" type="text/css" href="css/globals.css" />
-    <link rel="stylesheet" href="dist/drawerr.css" />
-  </head>
+  <script src="https://kit.fontawesome.com/6a615ea8dc.js" crossorigin="anonymous"></script>
+  <!-- Tailwind css UI -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind_config.js"></script>
+  <script src="js/interaction.js"></script>
 
-  <body>
-    <div class="h-screen w-screen">
-      <header
-        class="sticky top-0 z-50 grid grid-cols-2 justify-end px-3 py-3 lg:px-10 lg:py-6"
-      >
-        <div
-          class="relative my-auto flex h-10 w-full cursor-pointer items-center py-1"
-        >
-          <a
-            href="index.html"
-            class="bg-[url('public/assets/logo_white.png')] block w-full h-full bg-contain bg-left bg-no-repeat"
-          ></a>
-        </div>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css" />
+  <link rel="stylesheet" type="text/css" href="css/globals.css" />
+  <link rel="stylesheet" href="dist/drawerr.css" />
+</head>
 
-        <div
-          class="flex items-center justify-end space-x-14 text-lg text-gray-500 z-50"
-        >
-          <button class="toggleDrawerr">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
-
-      <nav
-        id="drawerr"
-        class="drawerr--init lg:w-[350px] w-full bg-black bg-opacity-90 lg:bg-opacity-60"
-      >
-        <div class="flex flex-col justify-between h-full">
-          <div class="drawerr-container">
-            <ul class="bolder pl-16 pt-32 text-left lg:text-3xl text-2xl">
-              <li>
-                <a class="block py-2" href="index.html"> HOME </a>
-              </li>
-              <li>
-                <a class="block py-2" href="company.html"> COMPANY </a>
-              </li>
-              <li>
-                <a class="block py-2" href="investment.html"> INVESTMENTS </a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="pl-12">
-            <a
-              class="border inline stewardship_code text-white p-2 rounded-lg text-sm"
-              href="stewardship_code.html"
-            >
-              STEWARDSHIP CODE
-            </a>
-          </div>
-
-          <div
-            class="flex flex-col flex-wrap items-center justify-end pb-4 text-white"
-          >
-            <span class="px-4 text-center text-[10px] font-extralight">
-              COPYRIGHT© <br />
-              DAOL Private Equity ALL RIGHTS RESERVED.
-            </span>
-          </div>
-        </div>
-      </nav>
-
-      <div class="fixed top-0 h-full w-full">
-        <div class="absolute z-10 h-full w-full bg-black bg-opacity-50"></div>
-        <video
-          autoplay
-          loop
-          muted
-          class="min-h-full w-auto min-w-full max-w-none fixed top-0 z-[5]"
-        >
-          <source src="public/assets/video/main.mp4" type="video/mp4" />
-        </video>
-        <main
-          class="relative z-30 flex h-full w-full items-center justify-center"
-        >
-          <section
-            class="min-h-[196px] w-full space-y-8 bg-white bg-opacity-0 py-10 text-center text-white"
-          >
-            <p class="normal lg:text-6xl text-3xl">다올프라이빗에쿼티는</p>
-            <p class="light lg:text-4xl text-xl">
-              국내 리딩 미들마켓 사모투자 전문회사입니다.
-            </p>
-          </section>
-        </main>
+<body>
+  <div class="h-screen w-screen">
+    <header class="sticky top-0 z-50 grid grid-cols-2 justify-end px-3 py-3 lg:px-10 lg:py-6">
+      <div class="relative my-auto flex h-10 w-full cursor-pointer items-center py-1">
+        <a href="index.html"
+          class="bg-[url('public/assets/logo_white.png')] block w-full h-full bg-contain bg-left bg-no-repeat"></a>
       </div>
-    </div>
 
-    <script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
-    <script src="dist/drawerr.js"></script>
-    <script>
-      const x = new drawerrMultilevel({
-        drawerr: "#drawerr",
-      });
-    </script>
-  </body>
+      <div class="flex items-center justify-end space-x-14 text-lg text-gray-500 z-50">
+        <button class="toggleDrawerr">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <nav id="drawerr" class="drawerr--init lg:w-[350px] w-full bg-black bg-opacity-90 lg:bg-opacity-60">
+      <div class="flex flex-col justify-between h-full">
+        <div class="drawerr-container">
+          <ul class="bolder text-left lg:text-3xl text-2xl">
+            <li>
+              <a class="block py-2" href="index.html"> HOME </a>
+            </li>
+            <li>
+              <a class="block py-2" href="company.html"> COMPANY </a>
+            </li>
+            <li>
+              <a class="block py-2" href="investment.html"> INVESTMENTS </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pl-12">
+          <a class="border inline stewardship_code text-white p-2 rounded-lg text-sm" href="stewardship_code.html">
+            STEWARDSHIP CODE
+          </a>
+        </div>
+
+        <div class="flex flex-col flex-wrap items-center justify-end pb-4 text-white">
+          <span class="px-4 text-center text-[10px] font-extralight">
+            COPYRIGHT© <br />
+            DAOL Private Equity ALL RIGHTS RESERVED.
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="fixed top-0 h-full w-full">
+      <div class="absolute z-10 h-full w-full bg-black bg-opacity-50"></div>
+      <video autoplay loop muted playsinline class="min-h-full w-auto min-w-full max-w-none fixed top-0 z-[5]">
+        <source src="public/assets/video/main.mp4" type="video/mp4" />
+      </video>
+      <main class="relative z-30 flex h-full w-full items-center justify-center">
+        <section class="min-h-[196px] w-full space-y-8 bg-white bg-opacity-0 py-10 text-center text-white">
+          <p class="normal lg:text-6xl text-3xl">다올프라이빗에쿼티는</p>
+          <p class="light lg:text-4xl text-xl">
+            국내 리딩 미들마켓 사모투자 전문회사입니다.
+          </p>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+  <script src="dist/drawerr.js"></script>
+  <script>
+    const x = new drawerrMultilevel({
+      drawerr: "#drawerr",
+    });
+  </script>
+</body>
+
 </html>

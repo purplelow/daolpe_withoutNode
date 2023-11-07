@@ -9,7 +9,7 @@ const multilevelSettings = {
   hasSubmenuClass: "drawerr-item-has-submenu",
   submenuClass: "drawerr-submenu",
   submenuActiveClass: "drawerr-submenu--active",
-  navigationContainerClass: "drawerr-navigation-container",
+  // navigationContainerClass: "drawerr-navigation-container",
   hiddenClass: "hidden",
   noHashLinkClass: "drawer-item-hashlink",
   subMenuLinkClass: "drawerr-submenu-link",

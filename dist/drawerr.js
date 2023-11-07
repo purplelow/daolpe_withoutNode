@@ -4965,14 +4965,14 @@ function _typeof(e) {
         })(e, t);
     }
     var m = {
-        activeSubmenu: !1,
+        activeSubmenu: !0,
         submenus: !1,
         links: !1,
         navigationTextClass: "drawerr-navigation",
         hasSubmenuClass: "drawerr-item-has-submenu",
         submenuClass: "drawerr-submenu",
         submenuActiveClass: "drawerr-submenu--active",
-        navigationContainerClass: "drawerr-navigation-container",
+        // navigationContainerClass: "drawerr-navigation-container",
         hiddenClass: "hidden",
         noHashLinkClass: "drawer-item-hashlink",
         subMenuLinkClass: "drawerr-submenu-link",
@@ -5074,62 +5074,62 @@ function _typeof(e) {
                       (this.tabHandle = !1));
               },
             },
+            // {
+            //   key: "insertNavigation",
+            //   value: function () {
+            //     (this.navigationContainer = document.querySelector(
+            //       ".".concat(this.multilevelSettings.navigationContainerClass)
+            //     )),
+            //       null === this.navigationContainer &&
+            //         ((this.navigationContainer =
+            //           this.drawerr.insertAdjacentHTML(
+            //             "afterbegin",
+            //             '<div class="'.concat(
+            //               this.multilevelSettings.navigationContainerClass,
+            //               '"></div>'
+            //             )
+            //           )),
+            //         (this.navigationContainer = document.querySelector(
+            //           ".".concat(
+            //             this.multilevelSettings.navigationContainerClass
+            //           )
+            //         ))),
+            //       this.navigationContainer.insertAdjacentHTML(
+            //         "afterbegin",
+            //         ' <a tabIndex="-1" class="'
+            //           .concat(
+            //             this.multilevelSettings.navigationTextClass,
+            //             '" href="#"><span class="'
+            //           )
+            //           .concat(
+            //             this.multilevelSettings.navigationTextClass,
+            //             "__icon "
+            //           )
+            //           .concat(
+            //             this.multilevelSettings.hiddenClass,
+            //             '"></span><span class="'
+            //           )
+            //           .concat(
+            //             this.multilevelSettings.navigationTextClass,
+            //             '__text">'
+            //           )
+            //           .concat(this.options.navigationText, "</span></a>")
+            //       );
+            //   },
+            // },
             {
-              key: "insertNavigation",
-              value: function () {
-                (this.navigationContainer = document.querySelector(
-                  ".".concat(this.multilevelSettings.navigationContainerClass)
-                )),
-                  null === this.navigationContainer &&
-                    ((this.navigationContainer =
-                      this.drawerr.insertAdjacentHTML(
-                        "afterbegin",
-                        '<div class="'.concat(
-                          this.multilevelSettings.navigationContainerClass,
-                          '"></div>'
-                        )
-                      )),
-                    (this.navigationContainer = document.querySelector(
-                      ".".concat(
-                        this.multilevelSettings.navigationContainerClass
-                      )
-                    ))),
-                  this.navigationContainer.insertAdjacentHTML(
-                    "afterbegin",
-                    ' <a tabIndex="-1" class="'
-                      .concat(
-                        this.multilevelSettings.navigationTextClass,
-                        '" href="#"><span class="'
-                      )
-                      .concat(
-                        this.multilevelSettings.navigationTextClass,
-                        "__icon "
-                      )
-                      .concat(
-                        this.multilevelSettings.hiddenClass,
-                        '"></span><span class="'
-                      )
-                      .concat(
-                        this.multilevelSettings.navigationTextClass,
-                        '__text">'
-                      )
-                      .concat(this.options.navigationText, "</span></a>")
-                  );
-              },
-            },
-            {
-              key: "insertCloseMenu",
-              value: function () {
-                null !== this.navigationContainer &&
-                  (this.navigationContainer.insertAdjacentHTML(
-                    "afterbegin",
-                    '<button id="js-sr-close-menu" class="sr-only sr-only-focusable">'.concat(
-                      this.options.closeMenuBtnLabel,
-                      "</button>"
-                    )
-                  ),
-                  this.closeMenuOnClick());
-              },
+              // key: "insertCloseMenu",
+              // value: function () {
+              //   null !== this.navigationContainer &&
+              //     (this.navigationContainer.insertAdjacentHTML(
+              //       "afterbegin",
+              //       '<button id="js-sr-close-menu" class="sr-only sr-only-focusable">'.concat(
+              //         this.options.closeMenuBtnLabel,
+              //         "</button>"
+              //       )
+              //     ),
+              //     this.closeMenuOnClick());
+              // },
             },
             {
               key: "addClassToSubmenus",

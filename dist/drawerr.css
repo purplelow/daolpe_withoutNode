@@ -144,8 +144,8 @@
   transform: translateZ(0);
 }
 .drawerr-multilevel ul {
-  position: relative;
-  height: calc(100% - 60px);
+  /* position: relative;
+  height: calc(100% - 60px); */
 }
 .drawerr-multilevel ul li {
   /* background: #f4f7f6; */
@@ -263,10 +263,10 @@
 }
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
-  clip: auto;
+  /* clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto;
+  width: auto; */
 }
