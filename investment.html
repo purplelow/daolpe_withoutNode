@@ -35,10 +35,9 @@
 
     <link
       rel="stylesheet"
-      type="text/css"
       href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/globals.css" />
+    <link rel="stylesheet" href="css/globals.css" />
     <link rel="stylesheet" href="dist/drawerr.css" />
   </head>
 
@@ -59,7 +58,7 @@
       <div
         class="flex items-center justify-end space-x-14 text-lg text-gray-500 z-50"
       >
-        <button class="toggleDrawerr">
+        <button class="toggleDrawerr lg:w-[40px] w-[30px]">
           <span></span>
           <span></span>
           <span></span>
@@ -68,7 +67,7 @@
 
       <nav
         id="drawerr"
-        class="drawerr--init lg:w-[350px] w-full bg-black bg-opacity-90 lg:bg-opacity-60"
+        class="drawerr--init lg:w-[350px] w-full bg-black bg-opacity-90 lg:bg-opacity-60 lg:pt-[260px] pt-[150px]"
       >
         <div class="flex flex-col justify-between h-full">
           <div class="drawerr-container">
@@ -118,13 +117,24 @@
       <div
         class="relative z-30 h-screen w-full flex items-center justify-center"
       >
-        <div
-          class="fixed_menu h-auto w-full space-y-8 bg-white bg-opacity-0 py-10 text-center text-white"
-        >
+        <div class="h-auto w-full space-y-8 py-10 text-center text-white">
           <p class="bold lg:text-7xl text-3xl tracking-wider">Investments</p>
-          <p class="light lg:text-3xl text-lg">
+          <p class="light lg:text-3xl hidden lg:block">
             COMMITTED TO BUILDING LONG-TERM VALUE
           </p>
+          <p class="light lg:hidden text-lg">
+            COMMITTED TO BUILDING <br />LONG-TERM VALUE
+          </p>
+        </div>
+
+        <div class="absolute bottom-[5%] opacity-50">
+          <div id="scroll-down" class="relative pt-[20px] text-center block">
+            <span class="arrow-down"></span>
+            <span
+              class="block uppercase text-white text-[10px] bold tracking-widest"
+              >Scroll down</span
+            >
+          </div>
         </div>
       </div>
 
@@ -141,8 +151,8 @@
               ></div>
 
               <div class="h-1/2 text-center">
-                <h3 class="text-2xl bold pt-2">테크닉골프</h3>
-                <h4 class="text-lg">Technique Golf</h4>
+                <h3 class="text-2xl bold pt-2">슈퍼스트로크</h3>
+                <h4 class="text-lg">Super Stroke</h4>
                 <p class="text-sm pt-4">
                   북미 소재 글로벌 1위 퍼터 그립 M/S를 보유한 종합 골프 브랜드
                 </p>
@@ -228,7 +238,7 @@
               class="portfolioList min-h-[320px] border-2 rounded-md border-gray-200 p-6"
             >
               <div
-                class="bg-[url('public/assets/portfolio/g_sungmyung.png')] bg-no-repeat bg-center bg-contain w-full h-1/2"
+                class="bg-[url('public/assets/portfolio/g_sungmyung.jpg')] bg-no-repeat bg-center bg-contain w-full h-1/2"
               ></div>
 
               <div class="h-1/2 text-center">
@@ -251,20 +261,23 @@
         </div>
 
         <div class="text-slate-500">
-          <ul>
+          <ul class="space-y-2">
             <li class="">
               30Fl, POST Tower, 60, Yeouinaru-ro, Yeongdeungpo-gu, Seoul, Korea
-              <span> <strong>T</strong>. +82 2 2184 4150</span
-              ><span> <strong>F</strong>. +82 2 2184 4192</span>
             </li>
-            <li class="">
-              COPYRIGHT© DAOL Private Equity ALL RIGHTS RESERVED.
+            <li>
+              <span><strong>T</strong>. +82 2 2184 4150</span>
+              <span>&nbsp;&nbsp;<strong>F</strong>. +82 2 2184 4192</span>
+              <span>&nbsp;&nbsp;<strong>E</strong>. info@daolpe.com</span>
             </li>
           </ul>
         </div>
 
         <div class="text-slate-400 hidden lg:block">
-          <ul>
+          <ul class="space-y-1">
+            <li class="">
+              COPYRIGHT© DAOL Private Equity ALL RIGHTS RESERVED.
+            </li>
             <li class="">
               This website is not intended to constitute any offer to sell or
               the invitation or solicitation of an offer to buy and product or
@@ -285,27 +298,10 @@
     <script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
     <script src="dist/drawerr.js"></script>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="src/custom.js"></script>
     <script>
-      const x = new drawerrMultilevel({
-        drawerr: "#drawerr",
-      });
-
       $(function () {
-        let lastScrollTop = 0;
-        const delta = 15;
-
-        $(window).scroll(function (event) {
-          const st = $(this).scrollTop();
-          if (Math.abs(lastScrollTop - st) <= delta) return;
-          if (st > lastScrollTop && lastScrollTop > 300) {
-            $("#header").addClass("header_up");
-            console.log("적용");
-          } else if (lastScrollTop < 300) {
-            $("#header").removeClass("header_up");
-            console.log("해제");
-          }
-          lastScrollTop = st;
-        });
+        $("#footer").load("footer.html");
       });
     </script>
   </body>

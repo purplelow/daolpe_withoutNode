@@ -946,7 +946,7 @@
     transition: all 1s;
   }
   .hed_fixed.on.bg {
-    background-color: #1a2273;
+    background-color: #000427;
     transition: none;
   }
 
