@@ -42,15 +42,15 @@
 					<div class="hed_fixed">
 						<div class="header_logo clearfix">
 							<h1 class="logo">
-								<a href="index.php">
+								<a href="index.html">
 									<img src="public/assets/logo_white.png" alt="DAOL Private Equity">	
 								</a>
 							</h1>
 						</div>
 					</div>
 
-					<p class="header_txt Mr_pro">STEWARDSHIP CODE</p>
-					<h2 class="header_tit">수탁자책임정책</h2>
+					<p class="header_txt Mr_pro"> </p>
+					<h2 class="header_tit">STEWARDSHIP CODE</h2>
 				</div>
 			</div>
 		</header>
@@ -279,12 +279,12 @@
 					<div class="footer_top_txt">
 						<ul>
 							<li class="Mr_pro">30Fl, POST Tower, 60, Yeouinaru-ro, Yeongdeungpo-gu, Seoul, Korea <span> <strong>T</strong>. +82 2 2184 4150</span><span> <strong>F</strong>. +82 2 2184 4192</span></li>
-							<li class="Mr_pro">COPYRIGHT© DAOL Private Equity ALL RIGHTS RESERVED.</li>
+							<li class="Mr_pro">COPYRIGHT© DAOL Private Equity Limited ALL RIGHTS RESERVED.</li>
 						</ul>
 					</div>
 					<div class="footer_bot_txt">
 						<ul>
-							<li class="Mr_pro">This website is not intended to constitute any offer to sell or the invitation or solicitation of an offer to buy and product or service offered by DAOL Private Equity Co., Ltd. or any affiliate of such company ("다올 PE") and must not be relied upon as such. DAOL PE is not responsible for damages of any kind arising out of use, reference to, or reliance on any information contained within this site. You must not use our site in any way which is unlawful, illegal, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity. We accept no responsibility for any loss or harm incurred.
+							<li class="Mr_pro">This website is not intended to constitute any offer to sell or the invitation or solicitation of an offer to buy and product or service offered by DAOL Private Equity Limited or any affiliate of such company ("다올 PE") and must not be relied upon as such. DAOL PE is not responsible for damages of any kind arising out of use, reference to, or reliance on any information contained within this site. You must not use our site in any way which is unlawful, illegal, fraudulent, or harmful, or in connection with any unlawful, illegal, fraudulent, or harmful purpose or activity. We accept no responsibility for any loss or harm incurred.
 							</li>
 						</ul>
 					</div>
