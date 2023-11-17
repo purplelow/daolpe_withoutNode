@@ -113,7 +113,7 @@
           loop
           muted
           playsinline
-          class="min-h-full w-auto min-w-full max-w-none fixed top-0 z-[5]"
+          class="min-h-full w-auto min-w-full max-w-none fixed top-0 z-[5] hidden lg:block"
           poster="public/assets/video/poster.png"
         >
           <source
@@ -121,8 +121,16 @@
             src="public/assets/video/main.mp4"
             type="video/mp4"
           />
+        </video>
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="min-h-full w-auto min-w-full max-w-none fixed top-0 z-[5] block lg:hidden"
+        >
           <source
-            class="lg:hidden"
+            class=""
             src="public/assets/video/mobile_main.mp4"
             type="video/mp4"
           />
