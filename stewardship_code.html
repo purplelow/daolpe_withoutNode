@@ -66,7 +66,9 @@
                 </h1>
               </div>
 
-              <div class="absolute top-10 right-10 z-[9999]">
+              <div
+                class="absolute top-5 right-5 lg:top-10 lg:right-10 z-[9999]"
+              >
                 <button class="toggleDrawerr lg:w-[40px] w-[30px]">
                   <span></span>
                   <span></span>
@@ -84,19 +86,22 @@
 
       <nav
         id="drawerr"
-        class="drawerr--init lg:w-[350px] w-full bg-black bg-opacity-90 lg:bg-opacity-60 lg:pt-[260px] pt-[150px]"
+        class="drawerr--init lg:w-[350px] w-full bg-black bg-opacity-90 2lg:bg-opacity-60 xl:pt-[200px] pt-[130px]"
       >
         <div class="flex flex-col justify-between h-full">
           <div class="drawerr-container">
-            <ul class="bolder pl-16 pt-32 text-left lg:text-3xl text-2xl">
+            <ul class="bolder pl-16 pt-32 text-left text-2xl">
               <li>
                 <a class="block py-2" href="index"> HOME </a>
               </li>
               <li>
-                <a class="block py-2" href="company"> COMPANY </a>
+                <a class="block py-2" href="about"> ABOUT </a>
               </li>
               <li>
-                <a class="block py-2" href="investment"> INVESTMENTS </a>
+                <a class="block py-2" href="investments"> INVESTMENTS </a>
+              </li>
+              <li>
+                <a class="block py-2" href="contact"> CONTACT </a>
               </li>
             </ul>
           </div>
@@ -114,8 +119,7 @@
             class="flex flex-col flex-wrap items-center justify-end pb-4 text-white"
           >
             <span class="px-4 text-center text-[10px] font-extralight">
-              COPYRIGHT© <br />
-              DAOL Private Equity Limited ALL RIGHTS RESERVED.
+              © 2023 DAOL Private Equity Limited. All rights reserved
             </span>
           </div>
         </div>
@@ -366,14 +370,14 @@
                           <td>윤정주</td>
                           <td>경영기획</td>
                           <td>이사</td>
-                          <td>jungjoo.yun@daolpe.com</td>
+                          <td>compliance@daolpe.com</td>
                         </tr>
                         <tr>
                           <td class="td_tit">담당자</td>
                           <td>신지원</td>
                           <td>경영기획</td>
                           <td>과장</td>
-                          <td>jiwon.shin@daolpe.com</td>
+                          <td>compliance@daolpe.com</td>
                         </tr>
                         <!-- <tr>
 												<td class="td_tit">담당자</td>
@@ -413,14 +417,14 @@
                             <span class="td_tit">책임자</span><br />윤정주
                           </td>
                           <td>경영기획<br />이사</td>
-                          <td>jungjoo.yun@daolpe.com</td>
+                          <td>compliance@daolpe.com</td>
                         </tr>
                         <tr>
                           <td>
                             <span class="td_tit">담당자</span><br />신지원
                           </td>
                           <td>경영기획<br />과장</td>
-                          <td>jiwon.shin@daolpe.com</td>
+                          <td>compliance@daolpe.com</td>
                         </tr>
                         <!-- <tr>
 												<td><span class="td_tit">담당자</span><br />윤정주</td>
@@ -453,49 +457,19 @@
         </div>
       </section>
       <!-- content -->
-      <footer id="footer">
-        <div class="row">
-          <!-- <div class="container"> -->
-          <div class="footer">
-            <div class="footer_header clearfix">
-              <div class="footer_logo">
-                <img
-                  src="public/assets/logo_black.png"
-                  alt="DAOL Private Equity"
-                />
-              </div>
-            </div>
-            <div class="footer_top_txt">
-              <ul>
-                <li class="Mr_pro">
-                  30Fl, POST Tower, 60, Yeouinaru-ro, Yeongdeungpo-gu, Seoul,
-                  Korea <span> <strong>T</strong>. +82 2 2184 4150</span
-                  ><span> <strong>F</strong>. +82 2 2184 4192</span>
-                </li>
-                <li class="Mr_pro">
-                  COPYRIGHT© DAOL Private Equity Limited ALL RIGHTS RESERVED.
-                </li>
-              </ul>
-            </div>
-            <div class="footer_bot_txt">
-              <ul>
-                <li class="Mr_pro">
-                  This website is not intended to constitute any offer to sell
-                  or the invitation or solicitation of an offer to buy
-                  and product or service offered by DAOL Private Equity Limited
-                  or any affiliate of such company ("다올 PE") and must not be
-                  relied upon as such. DAOL PE is not responsible for damages of
-                  any kind arising out of use, reference to, or reliance on any
-                  information contained within this site. You must not use our
-                  site in any way which is unlawful, illegal, fraudulent, or
-                  harmful, or in connection with any unlawful, illegal,
-                  fraudulent, or harmful purpose or activity. We accept no
-                  responsibility for any loss or harm incurred.
-                </li>
-              </ul>
-            </div>
+      <footer class="relative z-30 bg-slate-200 bg-opacity-80 p-10">
+        <div class="flex flex-col space-y-6 lg:text-sm text-[10px]">
+          <!-- <div class="lg:w-[13%] w-1/3">
+            <img src="public/assets/logo_black.png" alt="DAOL Private Equity" />
+          </div> -->
+
+          <div class="text-slate-400 hidden lg:block">
+            <ul class="space-y-1">
+              <li class="">
+                © 2023 DAOL Private Equity Limited. All rights reserved
+              </li>
+            </ul>
           </div>
-          <!-- </div> -->
         </div>
       </footer>
     </div>

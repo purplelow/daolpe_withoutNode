@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="public/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="icon" href="public/favicon/favicon.ico" type="image/x-icon" />
+
+    <meta
+      name="naver-site-verification"
+      content="31846b5cbaf9cf693116e4ebe5650b353ba9b8ed"
+    />
+    <meta property="title" content="DAOL Private Equity" />
+    <meta
+      property="keywords"
+      content="다올피이, 다올pe, 다올프라이빗에쿼티, Daolpe, Daolprivateequity"
+    />
+    <title>DAOL Private Equity</title>
+
+    <script
+      src="https://kit.fontawesome.com/6a615ea8dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind css UI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css"
+    />
+    <link rel="stylesheet" href="css/globals.css" />
+    <link rel="stylesheet" href="dist/drawerr.css" />
+  </head>
+
+  <body>
+    <div class="h-screen w-screen">
+      <header
+        id="header"
+        class="fixed w-full top-0 z-50 grid grid-cols-2 justify-end px-3 py-3 lg:px-10 lg:py-6 transition-all ease-in"
+      >
+        <div
+          class="relative my-auto flex h-10 w-full cursor-pointer items-center py-1"
+        >
+          <a
+            href="index"
+            class="bg-[url('public/assets/logo_white.png')] block w-full h-full bg-contain bg-left bg-no-repeat"
+          ></a>
+        </div>
+
+        <div
+          class="flex items-center justify-end space-x-14 text-lg text-gray-500 z-50"
+        >
+          <button class="toggleDrawerr lg:w-[40px] w-[30px]">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+
+        <nav
+          id="drawerr"
+          class="drawerr--init lg:w-[350px] w-full bg-black bg-opacity-90 2lg:bg-opacity-60 xl:pt-[200px] pt-[130px]"
+        >
+          <div class="flex flex-col justify-between h-full">
+            <div class="drawerr-container">
+              <ul class="bolder pl-16 pt-32 text-left lg:text-3xl text-2xl">
+                <li>
+                  <a class="block py-2" href="index"> HOME </a>
+                </li>
+                <li>
+                  <a class="block py-2" href="about"> COMPANY </a>
+                </li>
+                <li>
+                  <a class="block py-2" href="investment"> INVESTMENTS </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pl-12">
+              <a
+                class="border inline stewardship_code text-white p-2 rounded-lg text-sm"
+                href="stewardship_code"
+              >
+                STEWARDSHIP CODE
+              </a>
+            </div>
+
+            <div
+              class="flex flex-col flex-wrap items-center justify-end pb-4 text-white"
+            >
+              <span class="px-4 text-center text-[10px] font-extralight">
+                COPYRIGHT© <br />
+                DAOL Private Equity Limited ALL RIGHTS RESERVED.
+              </span>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="fixed top-0 h-full w-full">
+        <div
+          id="videoBG"
+          class="absolute z-10 h-full w-full bg-black bg-opacity-50 no-js"
+        ></div>
+        <div
+          class="loading-screen absolute z-10 h-full w-full bg-[#040510]"
+        ></div>
+        <video
+          id="mainVideo"
+          autoplay
+          loop
+          muted
+          playsinline
+          class="min-h-full w-auto min-w-full max-w-none fixed top-0 z-[5] hidden lg:block"
+        >
+          <source
+            class="hidden lg:block"
+            src="public/assets/video/main.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          class="min-h-full w-auto min-w-full max-w-none fixed top-0 z-[5] block lg:hidden"
+        >
+          <source
+            class=""
+            src="public/assets/video/mobile_main.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <main
+          class="relative z-30 flex h-full w-full items-center justify-center"
+        >
+          <section
+            class="min-h-[196px] w-full lg:space-y-8 space-y-4 bg-white bg-opacity-0 py-10 text-center text-white"
+          >
+            <p class="bold lg:text-6xl text-3xl">
+              DAOL Private Equity
+              <!-- <span class="lg:text-4xl text-xl">is</span> -->
+            </p>
+            <p class="light lg:text-3xl text-base">
+              Korea's Leading Middle Market <br class="lg:hidden" />
+              Private Equity Investment Group
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+    <script src="dist/drawerr.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+      const x = new drawerrMultilevel({
+        drawerr: "#drawerr",
+      });
+
+      $(document).ready(function () {
+        $("#mainVideo").on("canplaythrough", function () {
+          $(".loading-screen").fadeOut("slow", function () {
+            $("#mainVideo").fadeIn("slow");
+          });
+          $("#videoBG").removeClass("no-js");
+        });
+      });
+    </script>
+  </body>
+</html>
