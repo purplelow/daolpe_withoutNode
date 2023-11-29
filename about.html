@@ -201,16 +201,12 @@
         let delta = touchendX - touchstartX;
 
         if (Math.abs(delta) >= 50) {
-          // You can adjust the threshold (50 in this case) based on your needs
           if (delta > 0) {
             // Swiped right
             showContent(currentIndex = (currentIndex - 1) <= 0 ? 3 : (currentIndex - 1));
           } else {
             // Swiped left
             showContent(currentIndex = (currentIndex + 1) > 3 ? 1 : (currentIndex + 1));
-            // if (currentIndex >= 3) {
-            //   showContent(currentIndex - 2)
-            // }
           }
 
         }
