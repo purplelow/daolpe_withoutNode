@@ -5061,14 +5061,14 @@ function _typeof(e) {
                 c(d(t.prototype), "toggleDrawer", this).call(this),
                   this.toggleBtn.classList.contains("drawerr-btn--active")
                     ? (this.toggleBtn.setAttribute("aria-expanded", "true"),
-                      this.drawerr.querySelector("ul a").focus(),
+                      // this.drawerr.querySelector("ul a").focus(),
                       this.tabHandle ||
                         (this.tabHandle = s.maintain.tabFocus({
                           context: ".drawerr-container",
                         })))
                     : (this.removeActiveClassFromLinks(),
                       this.toggleBtn.setAttribute("aria-expanded", "false"),
-                      (this.multilevelSettings.activeSubmenu = !1),
+                      // (this.multilevelSettings.activeSubmenu = !1),
                       this.toggleBtn.focus(),
                       this.tabHandle.disengage(),
                       (this.tabHandle = !1));
@@ -5149,7 +5149,7 @@ function _typeof(e) {
                 var e = this;
                 setTimeout(function () {
                   e.removeActiveClassFromSubmenus(),
-                    e.setNavigationText(e.options.navigationText),
+                    // e.setNavigationText(e.options.navigationText),
                     e.hideShowNavigationIcon();
                 }, 300);
               },
@@ -5302,22 +5302,22 @@ function _typeof(e) {
                   );
               },
             },
-            {
-              key: "setNavigationText",
-              value: function (e) {
-                this.navigationText.textContent = e;
-              },
-            },
+            // {
+            //   key: "setNavigationText",
+            //   value: function (e) {
+            //     this.navigationText.textContent = e;
+            //   },
+            // },
             {
               key: "hideShowNavigationIcon",
               value: function (e) {
-                "show" === e
-                  ? this.navigationIcon.classList.remove(
-                      this.multilevelSettings.hiddenClass
-                    )
-                  : this.navigationIcon.classList.add(
-                      this.multilevelSettings.hiddenClass
-                    );
+                //     "show" === e
+                //       ? this.navigationIcon.classList.remove(
+                //           this.multilevelSettings.hiddenClass
+                //         )
+                //       : this.navigationIcon.classList.add(
+                //           this.multilevelSettings.hiddenClass
+                //         );
               },
             },
           ]) && l(n.prototype, i),
